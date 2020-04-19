@@ -4,6 +4,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
+*{
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 12px;
+  text-align: left;
+  Font-family: "Lato", sans-serif;
+  font-weight: Thin;
+
+}
+
 .accordion {
   background-color: #eee;
   color: #444;
@@ -29,6 +44,7 @@
   background-color: white;
   overflow: hidden;
   Font-family: "Lato", sans-serif;
+  font-weight: thin;
 }
 
 h2 {
@@ -37,7 +53,7 @@ h2 {
     Margin-bottom: 0px;
     Margin-top: 0px;
     Font-family: "Lato", sans-serif;
-    font-weight: bold;
+    font-weight: Black;
     Font-size: 30px;
     Text-transform: uppercase;
     color: #444;
@@ -49,15 +65,24 @@ h2 {
     Margin 1px;
 }
 
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: blue;
-   color: white;
-   text-align: center;
+h4 {
+	position: relative;
+    Text-align: left;
+    Margin-bottom: 0px;
+    Margin-top: 0px;
+    Font-family: "Lato", sans-serif;
+    font-weight: Thin;
+    Font-size: 12px;
+    Text-transform: uppercase;
+    color: #444;
+    width: 100%;
+    Border: 30px;
+    Padding: 15px;
+    Margin 1px;
 }
+
+
+
 
 
 </style>
@@ -72,7 +97,7 @@ h2 {
 
 <button class="accordion">AQR Momentum Case</button>
 <div class="panel">
-  <p>Competed in case competition at Georgetown University based on HBS's "AQR's Momentum Funds (A)" case. Highlights from the presentation can be seen below. The full PowerPoint presentation can be found at (https://github.com/Zane-Lovell/Portfolio)</p>
+  <p>Competed in case competition at Georgetown University based on HBS's "AQR's Momentum Funds (A)" case. Highlights from the presentation can be seen below. The full PowerPoint presentation can be found at (https://github.com/Zane-Lovell/Portfolio). Our ultimate recomendation for AQR was to continue support of the Large Cap Momentum fund, but to slowly start to widthdraw from the Small Cap and International Momentum Funds. We arrived at this decesion by utilizing regression analysis to calculate the alpha of these funds in addition to a theoretical fund from the fama french website. We supported our conclusion by evaluating the revenue of AQR versues the total net assets of AQR.</p>
 <img src="AMOMX.jpg" alt="AMOMX" width="430" height="250">
 <img src="AQRSTATS.jpg" alt = "AQRSTAT" width="430" height = "250">
 <img src="AQRSTATS2.jpg" alt = "AQRSTAT2" width="430" height = "250">
@@ -80,14 +105,14 @@ h2 {
 
 <button class="accordion">Sample Power BI Dashboard</button>
 <div class="panel">
-  <p>I have been exploring the capabilities of Power BI for several months now.The sample dashboard below pulls data from an accounting system and par with meta data recorded for each entry. The youtuber Avi Singh has been a great resource for me. His videos can be found at https://www.youtube.com/channel/UCRNmSv7mAPYiC0Y40TJijAw. You can see from the second photo that the architecture is not perfect star topology, however I am still exploring ways to analyze data in Power BI. </p>
+  <p>I have been exploring the capabilities of Power BI for several months now.The sample dashboard below pulls data from an accounting system and pars with meta data for each entry. The youtuber Avi Singh has been a great resource for me. His videos can be found at https://www.youtube.com/channel/UCRNmSv7mAPYiC0Y40TJijAw. You can see from the second photo that the architecture is not perfect star topology, however I am still exploring ways to analyze data in Power BI. </p>
 <img src="BISAMPLE.jpg" alt="BISAMPLE" width="500" height="250">
 <img src="BIARCH.jpg" alt="BIARCH" width="500" height="250">
 </div>
 
 <button class="accordion">COVID19 Forecasting</button>
 <div class="panel">
-  <p>During my financial Econometrics course at Georgetown University Dr. Jose Luis Guerrero Cusumano showed our class a forecasting model for the spread of COVID19 in Italy. I was able to apply this model to the spread of COVID19 cased in New York State. The image in the top left position shows the data in it's raw CSV form. I was able to filter through the data with a simple excel pivot table in order to find data for only New York State. Next I was able to start apply Dr. Guerro's model which fits a quadratic equation to the natural log of the cummulative number of cases. The fits for the data can be seen in the Minitab outputs shown below. The final results from this analysis can be seen in the graphical output from R in the bottom right image. </p>
+  <p>During my financial Econometrics course at Georgetown University Dr. Jose Luis Guerrero Cusumano showed our class a forecasting model for the spread of COVID19 in Italy. I was able to apply this model to the spread of COVID19 cased in New York State. The image in the top left position shows the data in it's raw CSV form. I was able to filter through the data with a simple excel pivot table. Next I was able to apply Dr. Guerro's model which fits a quadratic equation to the natural log of the cummulative number of cases. The fits for the data can be seen in the Minitab outputs shown below. The final results from this analysis can be seen in the graphical output from R in the bottom right image. </p>
   <img src="EXCEL.jpg" alt = "excel" width="430" height = "250">
   <img src="EXCEL1.jpg" alt = "excel1" width="200" height = "250">
   <img src="MINITAB2.jpg" alt = "mini2" width="430" height = "250">
@@ -98,7 +123,7 @@ h2 {
 
 <button class="accordion">Senior Witting Assignment</button>
 <div class="panel">
-  <p>Highlights from my senior writting requirment at the University of Arkansas can be seen below. This project utilized regression analysis in Excel and Stata. The entire paper can be dowloaded at my main github repository (https://github.com/Zane-Lovell/Portfolio) .</p>
+  <p>Highlights from my senior writting requirment at the University of Arkansas can be seen below. This project utilized regression analysis in Excel and Stata. The entire paper can be dowloaded at my main github repository. At the time of this paper my home town was voting to allow the sell of alcohol. This sparked my interest to evaluate a particular state's wellness index with alcohol consumption. The results from this research showed that alchol consumption does not impact a state's wellness index. Community involvement on the other hand does have an impact on a state's wellness. (https://github.com/Zane-Lovell/Portfolio) .</p>
 <img src="alc2.jpg" alt="alc2" width="500" height="250">
 <img src="alc1.jpg" alt = "acl1" width="430" height = "250">
 <img src="alc3.jpg" alt = "acl3" width="300" height = "250">
@@ -126,9 +151,20 @@ for (i = 0; i < acc.length; i++) {
 }
 </script>
 
-<div class="footer">
-  <p>Footer</p>
+
+<div class="row">
+  <div class="column" style="background-color:#cde0e6;">
+    <h4> <a href= "https://www.linkedin.com/in/zanelovell/">LinkedIn</a>
+  </div>
+  <div class="column" style="background-color:#cde0e6;">
+    <h4> <a href= "https://github.com/Zane-Lovell/Portfolio">GitHub</a>
+  </div>
+  <div class="column" style="background-color:#cde0e6;">
+    <h4> <a href= "zanealovell@gmail.com">Email</a>
+  </div>
 </div>
+
+
 
 </body>
 
